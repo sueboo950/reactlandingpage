@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import HomePage from './components/HomePage';
+import ReactDOM from 'react-dom';
+import HomePage from './viewers.components/Homepage';
 
-const Index = () => {
+// Component for server-side rendering check
+const ClientOnlyHomePage = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -14,7 +16,15 @@ const Index = () => {
   }
 
   return <HomePage />;
-
 };
 
-export default Index;
+// Check if running in a browser environment before accessing document
+if (typeof document !== 'undefined') {
+  const rootElement = document.getElementById('root');
+  if (rootElement) {
+    ReactDOM.render(<ClientOnlyHomePage />, rootElement);
+  }
+}
+
+// Export for Next.js or other SSR framework usage
+export default ClientOnlyHomePage;
