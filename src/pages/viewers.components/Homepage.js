@@ -7,7 +7,7 @@ import Description from './Description';
 import FeaturesList from './FeaturesList';
 import NewsletterForm from './NewsletterForm';
 import ToastMessage from './ToastMessage';
-import HomePageController from '../controllers/HomePageController';
+import HomePageController from '../../controllers/HomePageController';
 import Footer from './Footer.js';
 
 class HomePage extends Component {
