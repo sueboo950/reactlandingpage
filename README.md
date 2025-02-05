@@ -1,4 +1,4 @@
-To get to the app's deployed page, go to: https://reactlandingpage-chi.vercel.app/
+To get to the app's deployed page, go to: https://reactlandingpage-tau.vercel.app/
 Indent Rainbow was the extension for vscode being used to properly indent the project.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
